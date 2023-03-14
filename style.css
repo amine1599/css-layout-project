@@ -1,0 +1,275 @@
+/*body elements*/
+body {
+  font-weight: 400;
+  font-family: Roboto,Arial,sans-serif;
+  color: #747474;
+  padding-top: 2px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0 3.75rem;
+  
+}
+/*Header section*/
+header{
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 2;
+}
+.section-inner, .main-nav ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo-docplanner{
+  width: 200px;
+  height: 83px;
+}
+.main-nav ul{
+  width: 500px;
+  position: relative;
+  top: 41px;
+  
+}
+.main-nav ul li{
+  list-style: none;
+}
+.main-nav ul li a{
+  list-style: none;
+  text-decoration: none;
+  color: #ababab;
+}
+.main-nav ul li a:hover{
+  list-style: none;
+  text-decoration: none;
+  color:  #00b39b;
+}
+#about{
+  color: #00b39b;
+}
+/*leadsection-inner*/
+.leadsection-inner{
+  text-align: center;
+  
+}
+.leadsection-inner h1{
+  color:#00b39b;
+  font-size: 2.125rem;
+  margin: 1em 0;
+  font-family: Work Sans,Arial,sans-serif;
+  font-weight: 300;
+  letter-spacing: -.3px;
+}
+.grid{
+  text-align: center;
+  display: grid;
+  grid-template-columns:50% 50%;
+  grid-template-rows: 200px ;
+  margin: 2px;
+  gap: 2px;
+  
+}
+.grid p{
+  margin: 0.8em 0;
+  line-height: 1.75;
+  font-weight: 400;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
+}
+/*services-section-inner*/
+.services-section-inner{
+  display: grid;
+  margin-top: 40px;
+  grid-template-areas: "patients doctors clinics";
+  width: fit-content;
+  height: fit-content;
+  gap: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+}
+.services-section-inner h2{
+  font-size: 24px;
+}
+.patients, .doctors, .clinics{
+  border-radius: 10px;
+  letter-spacing: 2px;
+  padding: 10px 30px;
+  width: fit-content;
+  
+}
+.patients{
+  grid-area: patients;
+  background: #00ccb1;
+  display: flex;
+  flex-direction: column;
+  
+}
+.services-section-inner img{
+  width:28px;
+  height: auto;
+}
+.doctors{
+ grid-area: doctors;
+ background: #3d83df;
+}
+.clinics{
+  grid-area: clinics;
+  background: #1b2734;
+}
+.style-select select {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  padding: 0 2em 0 0;
+  -webkit-appearance: none;
+  outline: 0;
+  text-transform: none;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  font-size: large;
+}
+ .style-select {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-family: Roboto,Arial,sans-serif;
+  font-weight: 400;
+  letter-spacing: .04em;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+/*section brands-logo-inner*/
+.brands-logo-inner{
+  display: flex;
+  justify-content: center;
+  
+}
+.brands-logo-inner h1{
+  font-family: Work Sans,Arial,sans-serif;
+  font-weight: 300;
+  letter-spacing: .3px;
+  color:#00b39b
+}
+.brands-logo-inner img{
+  height: 55px;;
+  width: 55px;
+}
+.brands__logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+.brands__logos li{
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  width: 33.33333%;
+}
+.brands__logos li a{
+  text-decoration: none;
+  color: #3d83df;
+  outline: 0;
+  transition: all .2s ease 0s;
+  background-color: transparent;
+  text-align: center;
+}
+/*section offices*/
+.offices header{
+  text-align: center;
+}
+.offices header h2{
+  color: #00b39b;
+  /* width: 460 px; */
+  height: 78px;
+}
+.offices header p{
+  width: 460 px;
+  height: 78px;
+}
+/*section offices__slider*/
+.offices__slider{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  
+}
+.officefade-elements__visible{
+  position: relative;
+  margin-bottom: 50px;
+}
+.office__desc{
+  position: absolute;
+  left:15%;
+  color:#ababab;
+  letter-spacing: 1px;
+  font-size: large;
+  
+}
+.office__desc span{
+  position:relative;
+  left: 50%;
+  border: 1px solid blue;
+  border-radius: 2px;
+  padding: 2px;
+  color:white;
+  background-color: #3d83df;
+  font-size: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*join us section*/
+.join-us{
+  text-align: center;
+  margin-top: 50px;
+}
+.join-us h2{
+  font-size: 2.1428571429em;
+    color: #333;
+    margin-bottom: 0.75em;
+}
+.btn{
+  border: 1px solid blue;
+  padding:10px;
+  border-radius: 5px;
+  color: #fff;
+  background: #3d83df;
+  text-decoration: none;
+}
+/*footer*/
+footer{
+  border-top: 1px solid #eef2f2;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 12px;
+  color: #ababab;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+footer p{
+  margin-bottom: 0.4em;
+  font-size: 12px;
+  color: #ababab;
+  margin: 1.6em 0;
+}
+footer a{
+  text-decoration: none;
+  color: #3d83df;
+  outline: 0;
+  transition: all .2s ease 0s;
+  background-color: transparent;
+}
+}
